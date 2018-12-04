@@ -58,6 +58,7 @@
     "node_modules",
     "**/*.test.",
     "dist",
-    "setupTests.ts"
+    "setupTests.ts",
+    "tests"
   ]
 }
