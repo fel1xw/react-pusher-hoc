@@ -1,0 +1,11 @@
+language: node_js
+
+node_js:
+  - stable
+
+before_script:
+  - npm run build
+  - npm i
+
+script:
+  - npm t

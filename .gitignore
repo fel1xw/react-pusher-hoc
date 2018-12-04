@@ -1,3 +1,6 @@
+# Own
+/dist
+
 # Logs
 logs
 *.log
