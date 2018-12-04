@@ -13,7 +13,8 @@
     "build": "tsc",
     "postbuild": "size-limit",
     "size": "size-limit",
-    "test": "jest"
+    "test": "jest",
+    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "@types/node": "^10.12.12",
     "@types/react": "^16.7.13",
     "@types/react-dom": "^16.0.11",
+    "coveralls": "^3.0.2",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "http-server": "^0.11.1",
