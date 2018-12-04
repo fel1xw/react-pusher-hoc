@@ -1,7 +1,7 @@
 {
   "name": "react-pusher-hoc",
   "version": "1.0.0",
-  "description": "React pusher hoc",
+  "description": "Higher-Order Component for handling incoming [pusher.com](https://pusher.com) events like a charm.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -23,10 +23,15 @@
   "keywords": [
     "react",
     "pusher",
-    "hoc"
+    "hoc",
+    "pusher-js",
+    "higher-order component"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Felix Wostal",
+    "url": "https://felixwostal.de"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/fel1xw/react-pusher-hoc/issues"
   },
@@ -52,7 +57,7 @@
     "typescript": "^3.2.1"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16.3"
   },
   "size-limit": [
     {
