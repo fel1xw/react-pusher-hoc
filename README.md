@@ -36,12 +36,14 @@ const SomeList = ({ items }) => (
 );
 
 const mapEventsToProps = {
-  mapPropsToValues: props => ({
+  mapPropsToValues: () => ({
     items: [],
   }),
-  'itemChannel.add': (item, state) => ({
-    items: state.items.concat(item),
-  }),
+  events: {
+    'itemChannel.add': (item, state) => ({
+      items: state.items.concat(item),
+    }),
+  }
 };
 
 export default withPusher(mapEventsToProps)(SomeList);
