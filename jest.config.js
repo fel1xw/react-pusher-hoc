@@ -12,5 +12,5 @@ module.exports = {
     "js",
     "jsx",
   ],
-  "setupTestFrameworkScriptFile": "<rootDir>setupTests.ts"
+  "setupTestFrameworkScriptFile": "<rootDir>/scripts/setupEnzyme.ts"
 }
