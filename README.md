@@ -1,4 +1,4 @@
-# React Pusher HOC
+![logo](https://i.ibb.co/8MmP9pp/react-pusher-hoc-logo.png)
 
 [![npm version](https://badge.fury.io/js/react-pusher-hoc.svg)](https://badge.fury.io/js/react-pusher-hoc)
 [![Build Status](https://travis-ci.org/fel1xw/react-pusher-hoc.svg?branch=master)](https://travis-ci.org/fel1xw/react-pusher-hoc)
@@ -9,8 +9,10 @@
 [![gzip size](http://img.badgesize.io/https://unpkg.com/react-pusher-hoc@latest/dist/index.js?compression=gzip)](https://unpkg.com/react-pusher-hoc@latest/dist/index.js)
 
 ## Install
-```bash
-npm i -S react-pusher-hoc
+```sh
+npm install react-pusher-hoc --save
+# or
+yarn add react-pusher-hoc
 ```
 
 ## Usage
