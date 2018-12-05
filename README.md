@@ -1,4 +1,4 @@
-![logo](https://i.ibb.co/8MmP9pp/react-pusher-hoc-logo.png)
+![logo](https://i.ibb.co/yRjS2cd/react-pusher-hoc-logo.png)
 
 [![npm version](https://badge.fury.io/js/react-pusher-hoc.svg)](https://badge.fury.io/js/react-pusher-hoc)
 [![Build Status](https://travis-ci.org/fel1xw/react-pusher-hoc.svg?branch=master)](https://travis-ci.org/fel1xw/react-pusher-hoc)

@@ -14,7 +14,8 @@
     "postbuild": "size-limit",
     "size": "size-limit",
     "test": "jest",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "prepublishOnly": "npm t && npm run build"
   },
   "repository": {
     "type": "git",
