@@ -1,6 +1,6 @@
 {
   "name": "react-pusher-hoc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Higher-Order Component for handling incoming [pusher.com](https://pusher.com) events like a charm.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
