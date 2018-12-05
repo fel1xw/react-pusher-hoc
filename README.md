@@ -60,3 +60,8 @@ You need to provide initialValues through the `mapPropsToValues` function.
 ## Author
 
 * Felix Wostal [@felixwostal](https://twitter.com/felixwostal)
+
+## Support
+If you like the project and want to support my work, you can think about buy me a coffee :)
+
+[![paypal](https://img.shields.io/badge/donate-paypal-blue.svg)](https://paypal.me/felixwostal/1)
