@@ -30,25 +30,26 @@ describe('<Headline />', () => {
       subscribe: jest.fn(() => bindMock),
       channel: jest.fn(() => unbindMock),
     }
+    const channelName = 'itemChannel'
+    const eventName = 'add'
     const mapEventsToProps = {
       mapPropsToValues: () => ({
         items: ['buy milk'],
       }),
       events: {
-        'itemChannel.add': mockEventFn,
+        [`${channelName}.${eventName}`]: mockEventFn,
       }
     };
     const Wrapped = () => withContext(withPusher(mapEventsToProps)(SomeList), contextMock)
     const wrapper = mount(<Wrapped />)
     expect(wrapper.html().includes("buy milk")).toBe(true)
-    expect(contextMock.subscribe).toHaveBeenCalledWith('itemChannel')
-    const [ eventName ] = bindMock.bind.mock.calls[0]
-    expect(eventName).toBe('add')
+    expect(contextMock.subscribe).toHaveBeenCalledWith(channelName)
+    const [ calledEventName ] = bindMock.bind.mock.calls[0]
+    expect(calledEventName).toBe(eventName)
 
     wrapper.unmount()
 
-    expect(contextMock.channel).toHaveBeenCalledWith('itemChannel')
-    const [unbindEventName] = bindMock.bind.mock.calls[0]
-    expect(unbindEventName).toBe('add')
+    expect(contextMock.channel).toHaveBeenCalledWith(channelName)
+    expect(unbindMock.unbind).toHaveBeenCalledWith(eventName)
   })
 })
