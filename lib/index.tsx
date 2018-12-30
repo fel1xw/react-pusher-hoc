@@ -15,6 +15,8 @@ interface IncomingProps {
   events: FunctionsMap,
 }
 
+const parseEventKey = (eventKey: string) => eventKey.split('.')
+
 const withPusher = (config: IncomingProps) => <P extends object>(WrappedComponent: React.ComponentType<P>): React.ComponentType => {
   return class WithPusher extends React.Component<P, WithPusherState> {
     static contextType = PusherContext
@@ -32,8 +34,8 @@ const withPusher = (config: IncomingProps) => <P extends object>(WrappedComponen
     componentDidMount() {
       const { events: fns } = config
 
-      Object.entries(fns).forEach(([key, fn]) => {
-        const [channelName, eventName] = key.replace('.', '&').split('&')
+      Object.entries(fns).forEach(([eventKey, fn]) => {
+        const [channelName, eventName] = parseEventKey(eventKey)
 
         this.context
           .subscribe(channelName)
@@ -52,8 +54,8 @@ const withPusher = (config: IncomingProps) => <P extends object>(WrappedComponen
     componentWillUnmount() {
       const { events: fns } = config
 
-      Object.entries(fns).forEach(([key]) => {
-        const [channelName, eventName] = key.replace('.', '&').split('&')
+      Object.entries(fns).forEach(([eventKey]) => {
+        const [channelName, eventName] = parseEventKey(eventKey)
 
         this.context
           .channel(channelName)
