@@ -7,6 +7,7 @@
 [![Dependencies](https://david-dm.org/fel1xw/react-pusher-hoc.svg)](https://david-dm.org/fel1xw/react-pusher-hoc.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![gzip size](http://img.badgesize.io/https://unpkg.com/react-pusher-hoc@latest/dist/index.js?compression=gzip)](https://unpkg.com/react-pusher-hoc@latest/dist/index.js)
+[![Known Vulnerabilities](https://snyk.io/test/github/fel1xw/react-pusher-hoc/badge.svg)](https://snyk.io/test/github/fel1xw/react-pusher-hoc)
 
 ## Install
 ```sh
