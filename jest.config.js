@@ -1,16 +1,9 @@
 module.exports = {
-  "roots": [
-    "<rootDir>"
-  ],
-  "transform": {
-    "^.+\\.tsx?$": "ts-jest"
+  roots: ['<rootDir>'],
+  transform: {
+    '^.+\\.tsx?$': 'ts-jest',
   },
-  "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.tsx?$",
-  "moduleFileExtensions": [
-    "ts",
-    "tsx",
-    "js",
-    "jsx",
-  ],
-  "setupTestFrameworkScriptFile": "<rootDir>/scripts/setupEnzyme.ts"
+  testRegex: '(/tests/.*|(\\.|/)(test|spec))\\.tsx?$',
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+  setupFilesAfterEnv: ['<rootDir>/scripts/setupEnzyme.ts'],
 }
